@@ -3,8 +3,8 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
 import { X, ArrowRight } from "lucide-react";
-import { CATEGORIES } from "@/data/posts";
-import { InstagramIcon, YoutubeIcon, FacebookIcon, TwitterIcon } from "./SocialIcons";
+import { CATEGORIES, MALEKA_BIO } from "@/data/posts";
+import { InstagramIcon } from "./SocialIcons";
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -35,9 +35,14 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         <div>
           {/* Header */}
           <div className="flex items-center justify-between pb-6 border-b border-[#E2D5C7]">
-            <span className="font-serif text-xl tracking-[0.15em] text-[#231C19]">
-              CAMILA COELHO
-            </span>
+            <div>
+              <span className="font-serif text-xl tracking-[0.15em] text-[#231C19] block">
+                MALEKA MARONI
+              </span>
+              <span className="text-[9px] uppercase tracking-widest text-[#AE5238] font-semibold">
+                Mrs Universe Central America 2026
+              </span>
+            </div>
             <button
               onClick={onClose}
               className="p-1.5 text-[#231C19] hover:text-[#AE5238] transition-colors"
@@ -69,44 +74,21 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         {/* Footer / Socials */}
         <div className="pt-6 border-t border-[#E2D5C7]">
           <p className="text-[10px] uppercase tracking-widest text-[#AE5238] font-semibold mb-4">
-            Follow Camila
+            Follow The Journey
           </p>
           <div className="flex space-x-4 text-[#231C19]">
             <a
-              href="https://instagram.com"
+              href={MALEKA_BIO.instagram}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 bg-[#E3D8C6]/50 rounded-full hover:bg-[#AE5238] hover:text-white transition-colors"
+              className="flex items-center space-x-2 px-4 py-2 bg-[#E3D8C6]/50 rounded-full hover:bg-[#AE5238] hover:text-white transition-colors text-xs font-semibold"
             >
               <InstagramIcon size={18} />
-            </a>
-            <a
-              href="https://youtube.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 bg-[#E3D8C6]/50 rounded-full hover:bg-[#AE5238] hover:text-white transition-colors"
-            >
-              <YoutubeIcon size={18} />
-            </a>
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 bg-[#E3D8C6]/50 rounded-full hover:bg-[#AE5238] hover:text-white transition-colors"
-            >
-              <FacebookIcon size={18} />
-            </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 bg-[#E3D8C6]/50 rounded-full hover:bg-[#AE5238] hover:text-white transition-colors"
-            >
-              <TwitterIcon size={18} />
+              <span>@mrsuniversemaleka</span>
             </a>
           </div>
           <p className="text-[11px] text-[#6B5E57] mt-6">
-            © 2026 Camila Coelho. All rights reserved.
+            © 2026 Maleka Maroni. All rights reserved.
           </p>
         </div>
       </div>

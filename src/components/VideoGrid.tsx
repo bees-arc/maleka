@@ -12,24 +12,26 @@ interface VideoGridProps {
 export default function VideoGrid({ videos }: VideoGridProps) {
   const [selectedVideo, setSelectedVideo] = useState<Article | null>(null);
 
+  if (!videos || videos.length === 0) return null;
+
   return (
     <section className="py-12 md:py-16 border-b border-[#E2D5C7]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 pb-4 border-b border-[#E2D5C7]/70">
           <div>
             <span className="text-[10px] uppercase tracking-[0.25em] font-semibold text-[#5C633E]">
-              Watch Camila
+              Watch Maleka
             </span>
             <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-light text-[#231C19]">
-              Latest Videos
+              Featured Videos & Speeches
             </h2>
           </div>
 
           <Link
-            href="/category/video"
+            href="/category/advocacy"
             className="inline-flex items-center text-xs uppercase tracking-[0.2em] font-semibold text-[#231C19] hover:text-[#AE5238] transition-colors mt-3 sm:mt-0 group"
           >
-            <span>View All Videos</span>
+            <span>View All</span>
             <ArrowRight
               size={14}
               className="ml-1 text-[#AE5238] group-hover:translate-x-1 transition-transform"

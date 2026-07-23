@@ -3,10 +3,10 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Search, Menu, ChevronDown } from "lucide-react";
-import { CATEGORIES } from "@/data/posts";
+import { CATEGORIES, MALEKA_BIO } from "@/data/posts";
 import SearchModal from "./SearchModal";
 import MobileMenu from "./MobileMenu";
-import { InstagramIcon, YoutubeIcon, FacebookIcon, TwitterIcon } from "./SocialIcons";
+import { InstagramIcon } from "./SocialIcons";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -61,10 +61,10 @@ export default function Header() {
             <div className="text-center">
               <Link href="/" className="inline-block group">
                 <span className="font-serif text-2xl sm:text-3xl md:text-4xl tracking-[0.18em] font-light uppercase text-[#231C19] group-hover:text-[#AE5238] transition-colors">
-                  Camila Coelho
+                  Maleka Maroni
                 </span>
-                <span className="block text-[9px] uppercase tracking-[0.35em] text-[#AE5238] font-medium text-center mt-0.5">
-                  Fashion · Beauty · Lifestyle
+                <span className="block text-[9px] uppercase tracking-[0.35em] text-[#AE5238] font-semibold text-center mt-0.5">
+                  Mrs Universe Central America 2026
                 </span>
               </Link>
             </div>
@@ -88,42 +88,15 @@ export default function Header() {
                 </button>
 
                 {isFollowOpen && (
-                  <div className="absolute right-0 mt-2 w-44 bg-[#FAF6F0] border border-[#E2D5C7] shadow-lg rounded-sm py-2 z-50 animate-in fade-in slide-in-from-top-2 duration-200">
+                  <div className="absolute right-0 mt-2 w-48 bg-[#FAF6F0] border border-[#E2D5C7] shadow-lg rounded-sm py-2 z-50 animate-in fade-in slide-in-from-top-2 duration-200">
                     <a
-                      href="https://instagram.com"
+                      href={MALEKA_BIO.instagram}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center space-x-3 px-4 py-2 text-xs text-[#231C19] hover:bg-[#E3D8C6]/50 hover:text-[#AE5238] transition-colors"
+                      className="flex items-center space-x-3 px-4 py-2 text-xs text-[#231C19] hover:bg-[#E3D8C6]/50 hover:text-[#AE5238] transition-colors font-medium"
                     >
                       <InstagramIcon size={15} />
                       <span>Instagram</span>
-                    </a>
-                    <a
-                      href="https://youtube.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center space-x-3 px-4 py-2 text-xs text-[#231C19] hover:bg-[#E3D8C6]/50 hover:text-[#AE5238] transition-colors"
-                    >
-                      <YoutubeIcon size={15} />
-                      <span>YouTube</span>
-                    </a>
-                    <a
-                      href="https://facebook.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center space-x-3 px-4 py-2 text-xs text-[#231C19] hover:bg-[#E3D8C6]/50 hover:text-[#AE5238] transition-colors"
-                    >
-                      <FacebookIcon size={15} />
-                      <span>Facebook</span>
-                    </a>
-                    <a
-                      href="https://twitter.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center space-x-3 px-4 py-2 text-xs text-[#231C19] hover:bg-[#E3D8C6]/50 hover:text-[#AE5238] transition-colors"
-                    >
-                      <TwitterIcon size={15} />
-                      <span>Twitter</span>
                     </a>
                   </div>
                 )}

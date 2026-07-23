@@ -3,8 +3,8 @@
 import React from "react";
 import Link from "next/link";
 import { ArrowUp } from "lucide-react";
-import { CATEGORIES } from "@/data/posts";
-import { InstagramIcon, YoutubeIcon, FacebookIcon, TwitterIcon } from "./SocialIcons";
+import { CATEGORIES, MALEKA_BIO } from "@/data/posts";
+import { InstagramIcon } from "./SocialIcons";
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -20,21 +20,21 @@ export default function Footer() {
           <div className="md:col-span-5 space-y-4">
             <Link href="/" className="inline-block">
               <span className="font-serif text-3xl tracking-[0.18em] font-light uppercase text-[#231C19]">
-                Camila Coelho
+                Maleka Maroni
               </span>
-              <span className="block text-[9px] uppercase tracking-[0.35em] text-[#AE5238] font-medium mt-0.5">
-                Fashion · Beauty · Lifestyle
+              <span className="block text-[9px] uppercase tracking-[0.35em] text-[#AE5238] font-semibold mt-0.5">
+                Mrs Universe Central America 2026
               </span>
             </Link>
             <p className="text-xs text-[#6B5E57] leading-relaxed max-w-sm font-light">
-              An online luxury destination for daily fashion inspiration, skincare routines, travel guides, and lifestyle updates by Camila Coelho.
+              Official website for Maleka Maroni — Mrs Universe Central America 2026, Registered Nurse, MSN, PMHNP Candidate, and Advocate.
             </p>
           </div>
 
           {/* Column 2: Navigation Categories */}
           <div className="md:col-span-4">
             <h4 className="text-xs uppercase tracking-[0.25em] font-semibold text-[#AE5238] mb-4">
-              Explore Categories
+              Sections
             </h4>
             <ul className="grid grid-cols-2 gap-2 text-xs uppercase tracking-widest font-medium">
               {CATEGORIES.map((cat) => (
@@ -54,44 +54,18 @@ export default function Footer() {
           <div className="md:col-span-3 flex flex-col justify-between items-start md:items-end">
             <div>
               <h4 className="text-xs uppercase tracking-[0.25em] font-semibold text-[#AE5238] mb-4">
-                Connect
+                Follow The Journey
               </h4>
               <div className="flex space-x-3 text-[#231C19]">
                 <a
-                  href="https://instagram.com"
+                  href={MALEKA_BIO.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram"
-                  className="p-2 bg-[#E3D8C6]/50 rounded-full hover:bg-[#AE5238] hover:text-white transition-colors"
+                  className="flex items-center space-x-2 px-3 py-1.5 bg-[#E3D8C6]/50 rounded-full hover:bg-[#AE5238] hover:text-white transition-colors text-xs font-semibold"
                 >
                   <InstagramIcon size={16} />
-                </a>
-                <a
-                  href="https://youtube.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="YouTube"
-                  className="p-2 bg-[#E3D8C6]/50 rounded-full hover:bg-[#AE5238] hover:text-white transition-colors"
-                >
-                  <YoutubeIcon size={16} />
-                </a>
-                <a
-                  href="https://facebook.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Facebook"
-                  className="p-2 bg-[#E3D8C6]/50 rounded-full hover:bg-[#AE5238] hover:text-white transition-colors"
-                >
-                  <FacebookIcon size={16} />
-                </a>
-                <a
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Twitter"
-                  className="p-2 bg-[#E3D8C6]/50 rounded-full hover:bg-[#AE5238] hover:text-white transition-colors"
-                >
-                  <TwitterIcon size={16} />
+                  <span>@mrsuniversemaleka</span>
                 </a>
               </div>
             </div>
@@ -111,7 +85,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-[#6B5E57]">
-          <p>© 2026 Camila Coelho. All rights reserved.</p>
+          <p>© 2026 Maleka Maroni. All rights reserved.</p>
           <p className="mt-2 sm:mt-0 font-light">
             Designed with <span className="text-[#AE5238]">♥</span> & editorial elegance.
           </p>

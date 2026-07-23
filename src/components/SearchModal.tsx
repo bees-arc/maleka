@@ -65,7 +65,7 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search fashion, beauty, travel..."
+            placeholder="Search platform pillars, nursing, pageant journey..."
             className="w-full bg-transparent text-2xl sm:text-4xl font-serif font-light text-[#231C19] placeholder-[#9A8C82] focus:outline-none pr-12"
           />
           <Search
@@ -81,7 +81,7 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
               Trending Topics
             </h4>
             <div className="flex flex-wrap gap-2">
-              {["Skin Care", "Camila Coelho Collection", "Makeup", "Terracotta", "Amalfi Coast", "Mindfulness"].map(
+              {["Mental Health", "Pageant Journey", "MSN & Nursing", "Empowerment", "Domestic Violence Awareness", "Family"].map(
                 (tag) => (
                   <button
                     key={tag}
@@ -106,7 +106,7 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
             {results.length === 0 ? (
               <div className="text-center py-12 text-[#6B5E57]">
                 <p className="font-serif text-xl">No stories found matching your query.</p>
-                <p className="text-xs mt-2">Try searching for &quot;Beauty&quot;, &quot;Skincare&quot;, or &quot;Fashion&quot;.</p>
+                <p className="text-xs mt-2">Try searching for &quot;Mental Health&quot;, &quot;Pageant&quot;, or &quot;Nursing&quot;.</p>
               </div>
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pb-12">

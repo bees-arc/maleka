@@ -18,222 +18,163 @@ export interface Article {
   };
 }
 
+export const MALEKA_BIO = {
+  name: "Maleka Maroni",
+  title: "Mrs Universe Central America 2026",
+  tagline: "Nurse. Survivor. Mother. Advocate for the whole woman — mind, body, and confidence.",
+  secondaryTagline: "Healing from the inside out.",
+  quote: "Resilience, redefined.",
+  instagram: "https://www.instagram.com/mrsuniversemaleka?igsh=MTN2Y2lpZ2g3bXoybQ==",
+  handle: "@mrsuniversemaleka",
+  heroImage: "/images/maleka-hero.png",
+  crowningImage: "/images/maleka-crowning.png",
+  nurseImage: "/images/maleka-nurse.png",
+  avatarImage: "/images/maleka-hero.png",
+  stats: [
+    { label: "Years in Nursing", value: "15+" },
+    { label: "Children", value: "2" },
+    { label: "Crown", value: "2026" },
+    { label: "Specialty", value: "MSN, PMHNP Candidate" },
+  ],
+  aboutSummary: `I'm a registered nurse with 15 years of experience, having built my career in the ICU and Emergency Medicine before discovering my true calling in aesthetics as a nurse injector. That path led me back to school — I recently completed my Master of Science in Nursing, and I'm now preparing for my board certification as a Psychiatric Mental Health Nurse Practitioner. My goal is simple: bring mental wellness and aesthetic medicine together, so the people I care for feel confident, healthy, and empowered from the inside out.`,
+  storyDetails: `Nearly ten years ago, I lost my husband and best friend — a loss that reshaped everything I thought I knew about strength. I'm also a cancer survivor. Both experiences could have broken me. Instead, they deepened my compassion and sharpened my belief that even in life's hardest chapters, hope, purpose, and joy can still prevail. Today, I carry that belief into every room I walk into — as a nurse, as a mother, and now, as Mrs Universe Central America 2026.`,
+};
+
 export const CATEGORIES = [
-  { name: "Fashion", slug: "fashion", color: "#AE5238" },
-  { name: "Beauty", slug: "beauty", color: "#225D65" },
-  { name: "Travel", slug: "travel", color: "#D39932" },
-  { name: "Video", slug: "video", color: "#5C633E" },
-  { name: "Wellness", slug: "wellness", color: "#AE5238" },
+  { name: "About", slug: "about", color: "#AE5238" },
+  { name: "Advocacy", slug: "advocacy", color: "#225D65" },
+  { name: "Pageant Journey", slug: "pageant-journey", color: "#D39932" },
+  { name: "Career & MSN", slug: "career", color: "#5C633E" },
+  { name: "Personal", slug: "personal", color: "#AE5238" },
 ];
 
 export const ARTICLES: Article[] = [
   {
     id: "hero-1",
-    slug: "stressed-skin-how-your-daily-routine-affects-the-skin-barrier",
-    title: "Stressed Skin: How Your Daily Routine Affects the Skin Barrier",
-    category: "Beauty",
-    subcategory: "Skin Care",
-    excerpt: "The term 'stressed skin' has been coming up more and more in conversations about skincare. Amid fast-paced schedules, environmental factors, and over-exfoliation, protecting your skin barrier is essential.",
+    slug: "a-life-built-on-resilience-maleka-maronis-story",
+    title: "A Life Built on Resilience: Healing from the Inside Out",
+    category: "About",
+    subcategory: "Personal Story",
+    excerpt: "From 15 years in ICU & Emergency Nursing to cancer survival and raising two wonderful children—how purpose, grief, and mental wellness formed the foundation for Mrs Universe Central America 2026.",
     content: `
-      <p class="lead">The term "stressed skin" has been coming up more and more in conversations about skincare, and it’s no coincidence. Amid urban pollution, constant blue light exposure, and complex 10-step routines, our skin barrier is under continuous pressure.</p>
-      
-      <h3>What is Stressed Skin?</h3>
-      <p>When the skin barrier—the outermost layer that lock in moisture and repels irritants—becomes compromised, you might experience redness, sudden breakouts, extreme dryness, or a persistent dull look. It’s your skin's way of asking for a simplified, nourishing approach.</p>
-      
+      <p class="lead">I'm a registered nurse with 15 years of experience, having built my career in the ICU and Emergency Medicine before discovering my true calling in aesthetics as a nurse injector.</p>
+
+      <h3>Bridging Mental Wellness & Aesthetic Medicine</h3>
+      <p>That path led me back to school — I recently completed my Master of Science in Nursing (MSN), and I'm now preparing for my board certification as a Psychiatric Mental Health Nurse Practitioner (PMHNP). My goal is simple: bring mental wellness and aesthetic medicine together, so the people I care for feel confident, healthy, and empowered from the inside out.</p>
+
       <blockquote>
-        "Minimalism in skincare isn't just a trend; it's a therapeutic reset for your skin barrier."
+        "Confidence isn't cosmetic — it's foundational. Healing starts from the inside out."
       </blockquote>
 
-      <h3>3 Pillars of Barrier Repair</h3>
-      <ul>
-        <li><strong>Simplify Your Routine:</strong> Pause active acids like AHA/BHA and retinol for 7 to 14 days.</li>
-        <li><strong>Prioritize Ceramides & Hyaluronic Acid:</strong> Look for restorative lipid formulations that mirror your natural skin lipid structure.</li>
-        <li><strong>Gentle Cleansing:</strong> Switch to a non-foaming, pH-balanced cream or oil cleanser.</li>
-      </ul>
+      <h3>Triumph Through Adversity</h3>
+      <p>Nearly ten years ago, I lost my husband and best friend — a loss that reshaped everything I thought I knew about strength. I'm also a cancer survivor. Both experiences could have broken me. Instead, they deepened my compassion and sharpened my belief that even in life's hardest chapters, hope, purpose, and joy can still prevail.</p>
 
-      <p>By giving your skin breathing room and sticking to high-performance, restorative ingredients, you will notice a visible glow and restored resilience within weeks.</p>
+      <p>Today, I carry that belief into every room I walk into — as a nurse, as a mother, and now, as Mrs Universe Central America 2026.</p>
     `,
-    date: "July 17, 2026",
-    readTime: "4 min read",
-    imageUrl: "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?q=80&w=1200&auto=format&fit=crop",
+    date: "July 23, 2026",
+    readTime: "5 min read",
+    imageUrl: "/images/maleka-hero.png",
     featured: true,
-    tags: ["Skincare", "Beauty Tips", "Self Care", "Barrier Health"],
+    tags: ["Resilience", "Nursing", "Mental Health", "Pageant Journey"],
     author: {
-      name: "Camila Coelho",
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop"
+      name: "Maleka Maroni",
+      avatar: "/images/maleka-hero.png"
     }
   },
   {
     id: "art-1",
-    slug: "minimalist-skincare-why-less-is-more-for-your-skin",
-    title: "Minimalist Skincare: Why Less is More for Your Skin",
-    category: "Beauty",
-    subcategory: "Skin Care",
-    excerpt: "Discover the power of 'Skinminimalism'—how stripping back your vanity table can give you radiant, balanced skin.",
+    slug: "mental-health-for-every-age-platform-pillar",
+    title: "Mental Health, For Every Age: Why Wellness Needs a New Conversation",
+    category: "Advocacy",
+    subcategory: "Platform Pillar 1",
+    excerpt: "As a future Psychiatric Mental Health Nurse Practitioner, Maleka highlights how often mental health gets treated as an afterthought—especially for women juggling careers, families, and loss.",
     content: `
-      <p>Overloading your skin with dozens of serums can cause ingredient clashes and micro-inflammation. Skinminimalism focuses on quality over quantity.</p>
-      <p>Key staples include a reliable sunscreen, antioxidant vitamin C for the morning, and a rich ceramide moisturizer for nighttime recovery.</p>
+      <p>Mental health is not a luxury or a secondary consideration; it is the cornerstone of overall vitality. Women especially balance multi-faceted roles as caregivers, professionals, and mothers, often suppressing their own emotional needs.</p>
+      <p>Through community outreach and integrative nursing care, Maleka advocates for accessible mental wellness resources and stigma-free conversations.</p>
     `,
-    date: "June 5, 2026",
-    readTime: "3 min read",
-    imageUrl: "https://images.unsplash.com/photo-1512290900673-70020087786f?q=80&w=800&auto=format&fit=crop",
-    tags: ["Skincare", "Beauty", "Glow"],
+    date: "June 18, 2026",
+    readTime: "4 min read",
+    imageUrl: "/images/maleka-nurse.png",
+    tags: ["Mental Health", "PMHNP", "Advocacy"],
     author: {
-      name: "Camila Coelho",
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop"
+      name: "Maleka Maroni",
+      avatar: "/images/maleka-hero.png"
     }
   },
   {
     id: "art-2",
-    slug: "brown-in-the-spotlight-how-to-wear-the-trending-color",
-    title: "Brown in the Spotlight: How to Wear the Trending Color",
-    category: "Fashion",
-    subcategory: "Looks",
-    excerpt: "Rich chocolate brown, warm terracotta, and mocha shades are replacing black as the ultimate luxury neutral this season.",
+    slug: "womens-empowerment-from-scrubs-to-the-pageant-stage",
+    title: "Women's Empowerment: From Scrubs to the Pageant Stage",
+    category: "Advocacy",
+    subcategory: "Platform Pillar 2",
+    excerpt: "Confidence isn't cosmetic—it's foundational. Helping women reclaim ownership of how they look, feel, and show up in the world.",
     content: `
-      <p>Warm earth tones are dominating runways from Paris to New York. Here is how to style monochrome brown tailored suits, liquid satin dresses, and leather boots seamlessly.</p>
+      <p>Whether in medical scrubs or wearing a national sash, true empowerment is about autonomy, self-advocacy, and recognizing your inherent worth.</p>
     `,
-    date: "May 19, 2026",
-    readTime: "5 min read",
-    imageUrl: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=800&auto=format&fit=crop",
-    tags: ["Trends", "Fashion", "Outfits", "Terracotta"],
+    date: "May 29, 2026",
+    readTime: "3 min read",
+    imageUrl: "/images/maleka-crowning.png",
+    tags: ["Empowerment", "Women", "Leadership"],
     author: {
-      name: "Camila Coelho",
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop"
+      name: "Maleka Maroni",
+      avatar: "/images/maleka-hero.png"
     }
   },
   {
     id: "art-3",
-    slug: "camila-coelho-collection-march",
-    title: "Camila Coelho Collection: Spring Elegance",
-    category: "Fashion",
-    subcategory: "Camila Coelho Collection",
-    excerpt: "An exclusive look at the newest drop from the Camila Coelho Collection—fluid silhouettes, statement tailoring, and warm sunset hues.",
+    slug: "mrs-universe-central-america-2026-crowning-journey",
+    title: "Mrs Universe Central America 2026: The Pageant Journey & Mission",
+    category: "Pageant Journey",
+    subcategory: "Pageant Title",
+    excerpt: "Representing strength, resilience, and Central American heritage on the global stage as Mrs Universe Central America 2026.",
     content: `
-      <p>Inspired by coastal sunsets and sculpted minimalism, the new spring line blends lightweight linens with bold structural shoulders.</p>
+      <p>The journey to Mrs Universe Central America represents a lifetime of service, healing, and overcoming obstacles. Maleka prepares to share her platform on the international stage.</p>
     `,
-    date: "March 26, 2026",
-    readTime: "4 min read",
-    imageUrl: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-    tags: ["Collection", "Fashion", "Runway"],
+    date: "April 14, 2026",
+    readTime: "5 min read",
+    imageUrl: "/images/maleka-crowning.png",
+    tags: ["Pageant", "Mrs Universe", "Central America"],
     author: {
-      name: "Camila Coelho",
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop"
+      name: "Maleka Maroni",
+      avatar: "/images/maleka-hero.png"
     }
   },
   {
     id: "art-4",
-    slug: "nievia-mini-dress-camila-coelhos-elegant-look",
-    title: "Nievia Mini Dress: Camila Coelho's Elegant Look",
-    category: "Fashion",
-    subcategory: "Camila Coelho Collection",
-    excerpt: "How to style crisp cream monochrome dresses with gold sculpted jewelry for daytime coffee or evening cocktail events.",
+    slug: "life-outside-the-crown-family-dog-mom-scout-leader",
+    title: "Life Outside the Crown: Family, Romeo & Community Leadership",
+    category: "Personal",
+    subcategory: "Family & Everyday Life",
+    excerpt: "Mother to a 17-year-old daughter & 13-year-old son, dog mom to Romeo the Havanese, and dedicated Boy Scout leader.",
     content: `
-      <p>The Nievia Mini Dress features subtle draping and architectural necklines. Pair it with strappy sandals or structured blazers for instant sophistication.</p>
+      <p>Behind the crown and clinical practice is a warm home filled with laughter. Celebrating her daughter's high school graduation, supporting her son's 8th-grade milestones, spending weekends with Romeo, and mentoring youth in Boy Scouts.</p>
     `,
-    date: "March 20, 2026",
-    readTime: "3 min read",
-    imageUrl: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=800&auto=format&fit=crop",
-    tags: ["Fashion", "Dresses", "Style Guide"],
+    date: "March 10, 2026",
+    readTime: "4 min read",
+    imageUrl: "/images/maleka-hero.png",
+    tags: ["Personal", "Family", "Boy Scouts", "Romeo"],
     author: {
-      name: "Camila Coelho",
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop"
+      name: "Maleka Maroni",
+      avatar: "/images/maleka-hero.png"
     }
   },
   {
     id: "art-5",
-    slug: "blue-makeup-is-the-trend-of-the-moment",
-    title: "Blue Makeup & Deep Teal Shadows: The Trend of the Moment",
-    category: "Beauty",
-    subcategory: "Makeup",
-    excerpt: "Retro aqua washes and high-pigment deep teal eyeliner are making a major comeback on the red carpet.",
+    slug: "domestic-violence-awareness-voice-for-hope",
+    title: "Domestic Violence Awareness: Standing Together for Hope & Safety",
+    category: "Advocacy",
+    subcategory: "Platform Pillar 3",
+    excerpt: "Raising awareness, providing compassionate support, and standing as a beacon of light for survivors.",
     content: `
-      <p>From graphic teal liners to soft cobalt eyeshadow washes, blue tones add effortless drama to warm skin complexions.</p>
+      <p>Advocating for safety, emotional recovery, and empowerment for individuals affected by domestic violence.</p>
     `,
-    date: "February 17, 2026",
+    date: "February 22, 2026",
     readTime: "4 min read",
-    imageUrl: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=800&auto=format&fit=crop",
-    tags: ["Makeup", "Beauty", "Trends"],
+    imageUrl: "/images/maleka-nurse.png",
+    tags: ["Advocacy", "Support", "Awareness"],
     author: {
-      name: "Camila Coelho",
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop"
-    }
-  },
-  {
-    id: "art-6",
-    slug: "collagen-biostimulators-benefits-and-results",
-    title: "Collagen Biostimulators: Benefits, Results, and When to Start",
-    category: "Beauty",
-    subcategory: "Skin Care",
-    excerpt: "Everything you need to know about non-invasive skin treatments that encourage your body's natural collagen production.",
-    content: `
-      <p>Dermatologists share insights on bio-rejuvenation, long-term firmness, and pairing treatments with topical skincare.</p>
-    `,
-    date: "September 22, 2025",
-    readTime: "6 min read",
-    imageUrl: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=800&auto=format&fit=crop",
-    tags: ["Dermatology", "Skincare", "Wellness"],
-    author: {
-      name: "Camila Coelho",
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop"
-    }
-  },
-  {
-    id: "art-7",
-    slug: "episode-12-nursery-room-tour",
-    title: "Episode 12: Baby Coelho's Room Tour & Interior Design",
-    category: "Video",
-    subcategory: "Vlog",
-    excerpt: "Take an exclusive video tour of the serene, warm cream nursery room designed with custom wooden details and organic textures.",
-    content: `
-      <p>Watch the full video room tour where Camila reveals design choices, custom furniture, and calming neutral palettes created for the home.</p>
-    `,
-    date: "July 21, 2022",
-    readTime: "12 min watch",
-    imageUrl: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=800&auto=format&fit=crop",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    tags: ["Video", "Home", "Vlog", "Interior"],
-    author: {
-      name: "Camila Coelho",
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop"
-    }
-  },
-  {
-    id: "art-8",
-    slug: "summer-getaway-amalfi-coast-travel-guide",
-    title: "Summer Getaway: My Amalfi Coast Travel & Style Guide",
-    category: "Travel",
-    subcategory: "Destinations",
-    excerpt: "Cliffside dining, Mediterranean sunsets, and packing the ultimate warm terracotta capsule wardrobe for Italy.",
-    content: `
-      <p>From Positano boutique hotels to hidden lemon grove cafes, here are my top recommendations for a luxurious Italian escape.</p>
-    `,
-    date: "August 14, 2025",
-    readTime: "7 min read",
-    imageUrl: "https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=800&auto=format&fit=crop",
-    tags: ["Travel", "Italy", "Summer", "Guide"],
-    author: {
-      name: "Camila Coelho",
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop"
-    }
-  },
-  {
-    id: "art-9",
-    slug: "morning-mindfulness-and-glow-routine",
-    title: "Morning Mindfulness & High-Vibe Wellness Routine",
-    category: "Wellness",
-    subcategory: "Lifestyle",
-    excerpt: "How 15 minutes of quiet reflection, herbal matcha infusions, and gentle stretching transform your daily creative energy.",
-    content: `
-      <p>Creating space for mental clarity before opening phone notifications is the single most powerful habit for consistent inspiration.</p>
-    `,
-    date: "October 11, 2025",
-    readTime: "4 min read",
-    imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=800&auto=format&fit=crop",
-    tags: ["Wellness", "Mindfulness", "Morning Routine"],
-    author: {
-      name: "Camila Coelho",
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop"
+      name: "Maleka Maroni",
+      avatar: "/images/maleka-hero.png"
     }
   }
 ];

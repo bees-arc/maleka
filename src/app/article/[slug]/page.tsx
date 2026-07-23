@@ -129,7 +129,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
               {article.author.name}
             </h3>
             <p className="text-xs text-[#6B5E57] mt-1 font-light leading-relaxed">
-              Global fashion influencer, beauty entrepreneur, and founder of the Camila Coelho Collection. Sharing daily inspirations, trends, and lifestyle tips.
+              Registered Nurse with 15 years ICU & ER experience, MSN graduate, PMHNP Candidate, cancer survivor, mother, and Mrs Universe Central America 2026.
             </p>
           </div>
         </div>
@@ -139,7 +139,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
       {relatedArticles.length > 0 && (
         <div className="mt-16">
           <ArticleGrid
-            title="More Stories You Might Like"
+            title="More Stories & Insights"
             articles={relatedArticles}
             columns={3}
             viewAllLink=""

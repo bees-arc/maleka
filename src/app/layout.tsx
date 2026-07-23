@@ -18,8 +18,8 @@ const ibmPlex = IBM_Plex_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Camila Coelho | A Fashion, Beauty & Lifestyle Blog",
-  description: "An online luxury destination for daily fashion, beauty and lifestyle tips by Camila Coelho.",
+  title: "Maleka Maroni | Mrs Universe Central America 2026",
+  description: "Official website of Maleka Maroni - Mrs Universe Central America 2026, Registered Nurse, MSN, PMHNP Candidate, and Advocate.",
 };
 
 export default function RootLayout({

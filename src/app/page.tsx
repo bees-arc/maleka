@@ -1,51 +1,46 @@
 import React from "react";
 import HeroSection from "@/components/HeroSection";
+import AboutSection from "@/components/AboutSection";
+import PageantSection from "@/components/PageantSection";
+import AdvocacySection from "@/components/AdvocacySection";
+import CareerSection from "@/components/CareerSection";
+import PersonalSection from "@/components/PersonalSection";
+import ContactSection from "@/components/ContactSection";
 import ArticleGrid from "@/components/ArticleGrid";
-import Newsletter from "@/components/Newsletter";
-import CategorySlider from "@/components/CategorySlider";
-import VideoGrid from "@/components/VideoGrid";
 import { ARTICLES } from "@/data/posts";
 
 export default function Home() {
-  const heroArticle = ARTICLES[0];
-  const latestArticles = ARTICLES.slice(1, 4);
-  const twoColArticles = ARTICLES.slice(3, 5);
-  const beautyArticles = ARTICLES.filter((a) => a.category.toLowerCase() === "beauty");
-  const videoArticles = ARTICLES.filter((a) => a.category.toLowerCase() === "video");
-
   return (
     <div className="space-y-0">
-      {/* 1. Main Featured Hero Story */}
-      <HeroSection article={heroArticle} />
+      {/* 1. Hero Section */}
+      <HeroSection />
 
-      {/* 2. Latest Articles (3 Column Grid) */}
+      {/* 2. About Section: A Life Built on Resilience */}
+      <AboutSection />
+
+      {/* 3. Pageant Journey: Mrs Universe Central America 2026 */}
+      <PageantSection />
+
+      {/* 4. Advocacy Platform: A Voice for the Whole Woman */}
+      <AdvocacySection />
+
+      {/* 5. Career & Expertise: Clinical & Aesthetic Medicine */}
+      <CareerSection />
+
+      {/* 6. Personal: Family, Romeo & Youth Mentorship */}
+      <PersonalSection />
+
+      {/* 7. Recent Articles & Press Stories */}
       <ArticleGrid
-        title="Latest Articles"
-        subtitle="Fresh from the blog"
-        articles={latestArticles}
+        title="Articles & Platform Insights"
+        subtitle="Thoughts on Healthcare & Empowerment"
+        articles={ARTICLES}
         columns={3}
         hasBackground={true}
       />
 
-      {/* 3. Interactive Newsletter Banner */}
-      <Newsletter />
-
-      {/* 4. Highlighted Story Spotlights (2 Column Grid) */}
-      <ArticleGrid
-        title="Collection Spotlights"
-        subtitle="Fashion & Style Looks"
-        articles={twoColArticles}
-        columns={2}
-      />
-
-      {/* 5. Beauty Category Horizontal Slider */}
-      <CategorySlider
-        categoryTitle="Beauty & Skin Care"
-        articles={beautyArticles}
-      />
-
-      {/* 6. Video Highlights with Interactive Player */}
-      <VideoGrid videos={videoArticles} />
+      {/* 8. Contact & Appearance Inquiries */}
+      <ContactSection />
     </div>
   );
 }

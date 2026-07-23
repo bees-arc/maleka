@@ -29,15 +29,15 @@ export default function Newsletter() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <span className="inline-flex items-center space-x-2 text-xs uppercase tracking-[0.3em] font-semibold text-[#D39932] mb-3">
           <Mail size={14} />
-          <span>Newsletter Subscription</span>
+          <span>Platform Updates & Newsletter</span>
         </span>
 
         <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-light tracking-tight mb-4">
-          Stay Up To Date
+          Stay Connected With Maleka
         </h2>
 
         <p className="text-sm sm:text-base text-[#E3D8C6] max-w-xl mx-auto font-light leading-relaxed mb-8">
-          Receive exclusive fashion insights, skincare secrets, and trend alerts delivered directly to your inbox every week.
+          Receive news on mental health advocacy initiatives, pageant journey milestones, and community events directly to your inbox.
         </p>
 
         {status === "success" ? (
@@ -45,7 +45,7 @@ export default function Newsletter() {
             <CheckCircle2 size={24} className="text-[#AE5238]" />
             <div className="text-left">
               <h4 className="font-serif font-medium text-base">You&apos;re subscribed!</h4>
-              <p className="text-xs text-[#6B5E57]">Thank you for joining Camila Coelho&apos;s inner circle.</p>
+              <p className="text-xs text-[#6B5E57]">Thank you for joining Maleka Maroni&apos;s platform update list.</p>
             </div>
           </div>
         ) : (
