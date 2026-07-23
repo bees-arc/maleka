@@ -20,6 +20,11 @@ const ibmPlex = IBM_Plex_Sans({
 export const metadata: Metadata = {
   title: "Maleka Maroni | Mrs Universe Central America 2026",
   description: "Official website of Maleka Maroni - Mrs Universe Central America 2026, Registered Nurse, MSN, PMHNP Candidate, and Advocate.",
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({

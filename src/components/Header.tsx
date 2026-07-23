@@ -4,9 +4,9 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Search, Menu, ChevronDown } from "lucide-react";
 import { CATEGORIES, MALEKA_BIO } from "@/data/posts";
-import SearchModal from "./SearchModal";
-import MobileMenu from "./MobileMenu";
-import { InstagramIcon } from "./SocialIcons";
+import SearchModal from "@/components/SearchModal";
+import MobileMenu from "@/components/MobileMenu";
+import { InstagramIcon } from "@/components/SocialIcons";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
