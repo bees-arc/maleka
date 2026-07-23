@@ -27,26 +27,26 @@ export default function CareerSection() {
       title: "PMHNP Board Candidate",
       detail: "Psychiatric Mental Health Nurse Practitioner Certification",
       icon: Award,
-      color: "#5C633E",
+      color: "#AE5238",
     },
   ];
 
   return (
-    <section id="career" className="py-16 md:py-24 border-b border-[#E2D5C7] bg-[#FAF6F0]">
+    <section id="career" className="py-16 md:py-24 bg-[#5C633E] text-white border-b border-[#E2D5C7]/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs uppercase tracking-[0.3em] font-semibold text-[#5C633E]">
+          <span className="text-xs uppercase tracking-[0.3em] font-semibold text-[#D39932]">
             Section 05 — Clinical Excellence
           </span>
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-light text-[#231C19] mt-2 mb-4">
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-light text-[#E3D8C6] mt-2 mb-4">
             Career & Healthcare Expertise
           </h2>
-          <p className="text-sm text-[#6B5E57] font-light max-w-xl mx-auto">
+          <p className="text-sm text-[#E3D8C6]/80 font-light max-w-xl mx-auto">
             Bridging mental wellness and aesthetic medicine for confidence that starts from within.
           </p>
-          <div className="w-16 h-[2px] bg-[#5C633E] mx-auto mt-4" />
+          <div className="w-16 h-[2px] bg-[#D39932] mx-auto mt-4" />
         </div>
 
         {/* Credentials Grid */}
@@ -56,11 +56,11 @@ export default function CareerSection() {
             return (
               <div
                 key={idx}
-                className="bg-[#FAF6F0] p-6 rounded-sm border border-[#E2D5C7] hover:border-[#AE5238] transition-all hover:shadow-lg flex flex-col justify-between group"
+                className="bg-[#FAF6F0] text-[#231C19] p-6 rounded-sm border border-[#E2D5C7] hover:border-[#AE5238] transition-all hover:shadow-2xl flex flex-col justify-between group"
               >
                 <div>
                   <div
-                    className="w-12 h-12 rounded-full flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform"
+                    className="w-12 h-12 rounded-full flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform shadow-sm"
                     style={{ backgroundColor: cred.color }}
                   >
                     <Icon size={22} />

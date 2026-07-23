@@ -22,27 +22,27 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-16 md:py-24 border-b border-[#E2D5C7] bg-[#FAF6F0] relative overflow-hidden">
+    <section id="contact" className="py-16 md:py-24 bg-[#225D65] text-white border-b border-[#E2D5C7]/30 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs uppercase tracking-[0.3em] font-semibold text-[#225D65]">
+          <span className="text-xs uppercase tracking-[0.3em] font-semibold text-[#D39932]">
             Section 08 — Connect & Booking
           </span>
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-light text-[#231C19] mt-2 mb-4">
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-light text-[#E3D8C6] mt-2 mb-4">
             Contact & Appearances
           </h2>
-          <p className="text-sm text-[#6B5E57] font-light max-w-xl mx-auto">
+          <p className="text-sm text-[#E3D8C6]/80 font-light max-w-xl mx-auto">
             Reach out for speaking engagements, media interviews, sponsorships, and pageant appearances.
           </p>
-          <div className="w-16 h-[2px] bg-[#225D65] mx-auto mt-4" />
+          <div className="w-16 h-[2px] bg-[#D39932] mx-auto mt-4" />
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           
           {/* Left Column: Direct Info & Social */}
-          <div className="lg:col-span-5 space-y-8 bg-[#F4ECE1]/80 p-8 rounded-sm border border-[#E2D5C7]">
+          <div className="lg:col-span-5 space-y-8 bg-[#FAF6F0] text-[#231C19] p-8 rounded-sm border border-[#E2D5C7]">
             <div>
               <span className="text-xs uppercase tracking-[0.2em] font-semibold text-[#AE5238] block mb-1">
                 Direct Contact
@@ -60,13 +60,13 @@ export default function ContactSection() {
                 href={MALEKA_BIO.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-3 text-xs uppercase tracking-widest font-semibold text-[#231C19] hover:text-[#AE5238] transition-colors p-3 bg-[#FAF6F0] rounded-sm border border-[#E2D5C7]"
+                className="flex items-center space-x-3 text-xs uppercase tracking-widest font-semibold text-[#231C19] hover:text-[#AE5238] transition-colors p-3 bg-[#E3D8C6]/40 rounded-sm border border-[#E2D5C7]"
               >
                 <InstagramIcon size={20} className="text-[#AE5238]" />
                 <span>Instagram: @mrsuniversemaleka</span>
               </a>
 
-              <div className="flex items-center space-x-3 text-xs uppercase tracking-widest font-semibold text-[#231C19] p-3 bg-[#FAF6F0] rounded-sm border border-[#E2D5C7]">
+              <div className="flex items-center space-x-3 text-xs uppercase tracking-widest font-semibold text-[#231C19] p-3 bg-[#E3D8C6]/40 rounded-sm border border-[#E2D5C7]">
                 <Mail size={20} className="text-[#225D65]" />
                 <span>[ Booking Email Placeholder ]</span>
               </div>
@@ -74,7 +74,7 @@ export default function ContactSection() {
           </div>
 
           {/* Right Column: Contact Form */}
-          <div className="lg:col-span-7 bg-[#FAF6F0] p-8 rounded-sm border border-[#E2D5C7] shadow-lg">
+          <div className="lg:col-span-7 bg-[#FAF6F0] text-[#231C19] p-8 rounded-sm border border-[#E2D5C7] shadow-2xl">
             {submitted ? (
               <div className="text-center py-12 space-y-4">
                 <CheckCircle2 size={48} className="text-[#AE5238] mx-auto" />

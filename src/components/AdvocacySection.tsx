@@ -18,7 +18,7 @@ export default function AdvocacySection() {
       id: "empowerment",
       title: "Women's Empowerment",
       badge: "Pillar 02",
-      color: "#AE5238",
+      color: "#D39932",
       icon: Heart,
       description:
         "Confidence isn't cosmetic — it's foundational. Whether I'm in scrubs or on a pageant stage, my work is about helping women reclaim ownership of how they look, feel, and show up in the world.",
@@ -27,7 +27,7 @@ export default function AdvocacySection() {
       id: "dv-awareness",
       title: "Domestic Violence Awareness",
       badge: "Pillar 03",
-      color: "#D39932",
+      color: "#5C633E",
       icon: Shield,
       description:
         "Standing as a steadfast voice for safety, healing, and empowerment. Raising awareness, supporting community shelters, and empowering survivors to reclaim peace, independence, and dignity.",
@@ -35,21 +35,21 @@ export default function AdvocacySection() {
   ];
 
   return (
-    <section id="advocacy" className="py-16 md:py-24 border-b border-[#E2D5C7] bg-[#F4ECE1]/50">
+    <section id="advocacy" className="py-16 md:py-24 bg-[#AE5238] text-white border-b border-[#E2D5C7]/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs uppercase tracking-[0.3em] font-semibold text-[#225D65]">
+          <span className="text-xs uppercase tracking-[0.3em] font-semibold text-[#D39932]">
             Section 04 — Platform
           </span>
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-light text-[#231C19] mt-2 mb-4">
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-light text-[#E3D8C6] mt-2 mb-4">
             A Voice for the Whole Woman
           </h2>
-          <p className="text-sm text-[#6B5E57] font-light max-w-xl mx-auto">
+          <p className="text-sm text-[#E3D8C6]/80 font-light max-w-xl mx-auto">
             My platform stands on three causes I&apos;ve lived, not just studied.
           </p>
-          <div className="w-16 h-[2px] bg-[#225D65] mx-auto mt-4" />
+          <div className="w-16 h-[2px] bg-[#D39932] mx-auto mt-4" />
         </div>
 
         {/* 3 Pillars Grid */}
@@ -59,7 +59,7 @@ export default function AdvocacySection() {
             return (
               <div
                 key={pillar.id}
-                className="bg-[#FAF6F0] p-8 rounded-sm border border-[#E2D5C7] hover:border-[#AE5238] transition-all hover:shadow-xl flex flex-col justify-between group"
+                className="bg-[#FAF6F0] text-[#231C19] p-8 rounded-sm border border-[#E2D5C7] hover:border-[#D39932] transition-all hover:shadow-2xl flex flex-col justify-between group"
               >
                 <div>
                   <div className="flex items-center justify-between mb-6">
@@ -70,7 +70,7 @@ export default function AdvocacySection() {
                       {pillar.badge}
                     </span>
                     <div
-                      className="w-10 h-10 rounded-full flex items-center justify-center text-white group-hover:scale-110 transition-transform"
+                      className="w-10 h-10 rounded-full flex items-center justify-center text-white group-hover:scale-110 transition-transform shadow-sm"
                       style={{ backgroundColor: pillar.color }}
                     >
                       <Icon size={20} />
